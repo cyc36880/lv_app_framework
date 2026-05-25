@@ -1,0 +1,21 @@
+{
+  "name": "X-Track Framework",
+  "version": "1.0.0",
+  "description": "Lightweight UI framework on LVGL — PageManager, DataBroker, DeviceManager, MVC template, widgets, i18n",
+  "keywords": ["lvgl", "framework", "ui", "embedded", "mvc"],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "build": {
+    "includeDir": ".",
+    "srcFilter": [
+      "+<**/*.c>",
+      "+<**/*.cpp>",
+      "-<expand/*.c>",
+      "-<expand/*.cpp>"
+    ]
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}

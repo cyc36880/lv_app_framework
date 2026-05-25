@@ -1,0 +1,9 @@
+version: "1.0.0"
+description: "Lightweight UI framework built on LVGL — PageManager, DataBroker, DeviceManager, MVC template, widgets, i18n"
+dependencies:
+  lvgl/lvgl: ">=8.2,<9"
+files:
+  include:
+    - "*.h"
+    - src/
+    - src/**/*
