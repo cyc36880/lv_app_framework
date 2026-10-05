@@ -90,6 +90,7 @@ PageBase::STATE PageManager::stateLoad(PageBase* base)
      * 定位时全部堆叠在左上角。
      */
     lv_obj_remove_style_all(root_obj);
+    lv_obj_set_style_bg_opa(root_obj, LV_OPA_100, 0);
     lv_obj_set_size(root_obj, LV_PCT(100), LV_PCT(100));
     lv_obj_clear_flag(root_obj, LV_OBJ_FLAG_SCROLLABLE);
     lv_obj_set_user_data(root_obj, base);
