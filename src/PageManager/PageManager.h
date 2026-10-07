@@ -246,6 +246,13 @@ public:
     const char* getPagePrevName();
 
     /**
+     * @brief 获取当前页面的名称（栈顶页面）
+     * @return 页面名称字符串，栈中仅一页时返回 nullptr
+     *
+     * 用于当前页面知道"我是哪里"。
+     */
+    const char* getPageName();
+    /**
      * @brief 获取当前导航栈深度
      * @return 栈中页面数量（首页也算一个）
      */

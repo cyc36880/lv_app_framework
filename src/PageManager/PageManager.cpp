@@ -204,6 +204,11 @@ const char* PageManager::getPagePrevName()
     return _pagePrev ? _pagePrev->_name : PM_EMPTY_PAGE_NAME;
 }
 
+const char* PageManager::getPageName()
+{
+    return _pageCurrent ? _pageCurrent->_name : PM_EMPTY_PAGE_NAME;
+}
+
 void PageManager::setEventCallback(EVENT_CALLBACK callback, void* userData)
 {
     _eventCallback = callback;
